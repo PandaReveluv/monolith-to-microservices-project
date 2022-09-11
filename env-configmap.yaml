@@ -1,0 +1,13 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: env-configmap
+data:
+  POSTGRES_HOST: $POSTGRES_HOST
+  POSTGRES_DB: $POSTGRES_DB
+  AWS_BUCKET: $AWS_BUCKET
+  AWS_REGION: $AWS_REGION
+  AWS_PROFILE: $AWS_PROFILE
+  JWT_SECRET: $JWT_SECRET
+  URL: "http://localhost:8080"
+  PORT: "8080"
